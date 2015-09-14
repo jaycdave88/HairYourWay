@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E11DEE82C2AA011B2080DC6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 367109D732E0D6EEDC40D551 /* libPods.a */; };
+		364D01681BA73DA400674603 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D01671BA73DA400674603 /* main.m */; };
+		364D016B1BA73DA400674603 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D016A1BA73DA400674603 /* AppDelegate.m */; };
+		364D016E1BA73DA400674603 /* HairYourWay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 364D016C1BA73DA400674603 /* HairYourWay.xcdatamodeld */; };
+		364D01711BA73DA400674603 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D01701BA73DA400674603 /* ViewController.m */; };
+		364D01741BA73DA400674603 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364D01721BA73DA400674603 /* Main.storyboard */; };
+		364D01761BA73DA400674603 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364D01751BA73DA400674603 /* Images.xcassets */; };
+		364D01791BA73DA400674603 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364D01771BA73DA400674603 /* LaunchScreen.xib */; };
+		364D01851BA73DA400674603 /* HairYourWayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D01841BA73DA400674603 /* HairYourWayTests.m */; };
+		364D01911BA73FC100674603 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D018E1BA73FC100674603 /* FBSDKCoreKit.framework */; };
+		364D01921BA73FC100674603 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D018F1BA73FC100674603 /* FBSDKLoginKit.framework */; };
+		364D01931BA73FC100674603 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D01901BA73FC100674603 /* FBSDKShareKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		364D017F1BA73DA400674603 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 364D015A1BA73DA400674603 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364D01611BA73DA400674603;
+			remoteInfo = HairYourWay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		364D01621BA73DA400674603 /* HairYourWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HairYourWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		364D01661BA73DA400674603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		364D01671BA73DA400674603 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		364D01691BA73DA400674603 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		364D016A1BA73DA400674603 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		364D016D1BA73DA400674603 /* HairYourWay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HairYourWay.xcdatamodel; sourceTree = "<group>"; };
+		364D016F1BA73DA400674603 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		364D01701BA73DA400674603 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		364D01731BA73DA400674603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		364D01751BA73DA400674603 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		364D01781BA73DA400674603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		364D017E1BA73DA400674603 /* HairYourWayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HairYourWayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		364D01831BA73DA400674603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		364D01841BA73DA400674603 /* HairYourWayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HairYourWayTests.m; sourceTree = "<group>"; };
+		364D018E1BA73FC100674603 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		364D018F1BA73FC100674603 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		364D01901BA73FC100674603 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		367109D732E0D6EEDC40D551 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		70885C7976DBE22F591F5B72 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B7BCFC8D13BE4C20D1968C04 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		364D015F1BA73DA400674603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364D01931BA73FC100674603 /* FBSDKShareKit.framework in Frameworks */,
+				0E11DEE82C2AA011B2080DC6 /* libPods.a in Frameworks */,
+				364D01911BA73FC100674603 /* FBSDKCoreKit.framework in Frameworks */,
+				364D01921BA73FC100674603 /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364D017B1BA73DA400674603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		364D01591BA73DA400674603 = {
+			isa = PBXGroup;
+			children = (
+				364D018E1BA73FC100674603 /* FBSDKCoreKit.framework */,
+				364D018F1BA73FC100674603 /* FBSDKLoginKit.framework */,
+				364D01901BA73FC100674603 /* FBSDKShareKit.framework */,
+				364D01641BA73DA400674603 /* HairYourWay */,
+				364D01811BA73DA400674603 /* HairYourWayTests */,
+				364D01631BA73DA400674603 /* Products */,
+				62E2BE537CD09FDCFAB36773 /* Pods */,
+				A33F82EE376D9B2F3B77C3F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		364D01631BA73DA400674603 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				364D01621BA73DA400674603 /* HairYourWay.app */,
+				364D017E1BA73DA400674603 /* HairYourWayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		364D01641BA73DA400674603 /* HairYourWay */ = {
+			isa = PBXGroup;
+			children = (
+				364D01691BA73DA400674603 /* AppDelegate.h */,
+				364D016A1BA73DA400674603 /* AppDelegate.m */,
+				364D016F1BA73DA400674603 /* ViewController.h */,
+				364D01701BA73DA400674603 /* ViewController.m */,
+				364D01721BA73DA400674603 /* Main.storyboard */,
+				364D01751BA73DA400674603 /* Images.xcassets */,
+				364D01771BA73DA400674603 /* LaunchScreen.xib */,
+				364D016C1BA73DA400674603 /* HairYourWay.xcdatamodeld */,
+				364D01651BA73DA400674603 /* Supporting Files */,
+			);
+			path = HairYourWay;
+			sourceTree = "<group>";
+		};
+		364D01651BA73DA400674603 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				364D01661BA73DA400674603 /* Info.plist */,
+				364D01671BA73DA400674603 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		364D01811BA73DA400674603 /* HairYourWayTests */ = {
+			isa = PBXGroup;
+			children = (
+				364D01841BA73DA400674603 /* HairYourWayTests.m */,
+				364D01821BA73DA400674603 /* Supporting Files */,
+			);
+			path = HairYourWayTests;
+			sourceTree = "<group>";
+		};
+		364D01821BA73DA400674603 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				364D01831BA73DA400674603 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62E2BE537CD09FDCFAB36773 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7BCFC8D13BE4C20D1968C04 /* Pods.debug.xcconfig */,
+				70885C7976DBE22F591F5B72 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A33F82EE376D9B2F3B77C3F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				367109D732E0D6EEDC40D551 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		364D01611BA73DA400674603 /* HairYourWay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 364D01881BA73DA400674603 /* Build configuration list for PBXNativeTarget "HairYourWay" */;
+			buildPhases = (
+				08EB04A7501FF3A765EBBA1B /* Check Pods Manifest.lock */,
+				364D015E1BA73DA400674603 /* Sources */,
+				364D015F1BA73DA400674603 /* Frameworks */,
+				364D01601BA73DA400674603 /* Resources */,
+				5FBE88AA20AB3CCBFD92723D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HairYourWay;
+			productName = HairYourWay;
+			productReference = 364D01621BA73DA400674603 /* HairYourWay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		364D017D1BA73DA400674603 /* HairYourWayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 364D018B1BA73DA400674603 /* Build configuration list for PBXNativeTarget "HairYourWayTests" */;
+			buildPhases = (
+				364D017A1BA73DA400674603 /* Sources */,
+				364D017B1BA73DA400674603 /* Frameworks */,
+				364D017C1BA73DA400674603 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				364D01801BA73DA400674603 /* PBXTargetDependency */,
+			);
+			name = HairYourWayTests;
+			productName = HairYourWayTests;
+			productReference = 364D017E1BA73DA400674603 /* HairYourWayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		364D015A1BA73DA400674603 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "DEV MODE";
+				TargetAttributes = {
+					364D01611BA73DA400674603 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					364D017D1BA73DA400674603 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 364D01611BA73DA400674603;
+					};
+				};
+			};
+			buildConfigurationList = 364D015D1BA73DA400674603 /* Build configuration list for PBXProject "HairYourWay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 364D01591BA73DA400674603;
+			productRefGroup = 364D01631BA73DA400674603 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				364D01611BA73DA400674603 /* HairYourWay */,
+				364D017D1BA73DA400674603 /* HairYourWayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		364D01601BA73DA400674603 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364D01741BA73DA400674603 /* Main.storyboard in Resources */,
+				364D01791BA73DA400674603 /* LaunchScreen.xib in Resources */,
+				364D01761BA73DA400674603 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364D017C1BA73DA400674603 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08EB04A7501FF3A765EBBA1B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5FBE88AA20AB3CCBFD92723D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		364D015E1BA73DA400674603 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364D016B1BA73DA400674603 /* AppDelegate.m in Sources */,
+				364D01681BA73DA400674603 /* main.m in Sources */,
+				364D01711BA73DA400674603 /* ViewController.m in Sources */,
+				364D016E1BA73DA400674603 /* HairYourWay.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364D017A1BA73DA400674603 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364D01851BA73DA400674603 /* HairYourWayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		364D01801BA73DA400674603 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 364D01611BA73DA400674603 /* HairYourWay */;
+			targetProxy = 364D017F1BA73DA400674603 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		364D01721BA73DA400674603 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				364D01731BA73DA400674603 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		364D01771BA73DA400674603 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				364D01781BA73DA400674603 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		364D01861BA73DA400674603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		364D01871BA73DA400674603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		364D01891BA73DA400674603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7BCFC8D13BE4C20D1968C04 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = HairYourWay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		364D018A1BA73DA400674603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70885C7976DBE22F591F5B72 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = HairYourWay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		364D018C1BA73DA400674603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HairYourWayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HairYourWay.app/HairYourWay";
+			};
+			name = Debug;
+		};
+		364D018D1BA73DA400674603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HairYourWayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HairYourWay.app/HairYourWay";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		364D015D1BA73DA400674603 /* Build configuration list for PBXProject "HairYourWay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364D01861BA73DA400674603 /* Debug */,
+				364D01871BA73DA400674603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		364D01881BA73DA400674603 /* Build configuration list for PBXNativeTarget "HairYourWay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364D01891BA73DA400674603 /* Debug */,
+				364D018A1BA73DA400674603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		364D018B1BA73DA400674603 /* Build configuration list for PBXNativeTarget "HairYourWayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364D018C1BA73DA400674603 /* Debug */,
+				364D018D1BA73DA400674603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		364D016C1BA73DA400674603 /* HairYourWay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				364D016D1BA73DA400674603 /* HairYourWay.xcdatamodel */,
+			);
+			currentVersion = 364D016D1BA73DA400674603 /* HairYourWay.xcdatamodel */;
+			path = HairYourWay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 364D015A1BA73DA400674603 /* Project object */;
+}
