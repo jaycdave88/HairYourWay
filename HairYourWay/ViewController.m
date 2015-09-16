@@ -15,16 +15,12 @@
 @end
 
 @implementation ViewController
+@synthesize loginButton;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // yoda say
-    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
     loginButton.readPermissions = @[@"public_profile", @"email"];
-    loginButton.center = self.view.center;
-
-    [self.view addSubview:loginButton];
-
 }
 
 
