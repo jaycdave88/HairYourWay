@@ -19,6 +19,8 @@
 		364D01911BA73FC100674603 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D018E1BA73FC100674603 /* FBSDKCoreKit.framework */; };
 		364D01921BA73FC100674603 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D018F1BA73FC100674603 /* FBSDKLoginKit.framework */; };
 		364D01931BA73FC100674603 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D01901BA73FC100674603 /* FBSDKShareKit.framework */; };
+		365CE8CF1BAA778800AF02FF /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 365CE8CE1BAA778800AF02FF /* SignUpViewController.m */; };
+		365CE8D31BAA793800AF02FF /* HYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 365CE8D21BAA793800AF02FF /* HYUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		364D018E1BA73FC100674603 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		364D018F1BA73FC100674603 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		364D01901BA73FC100674603 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		365CE8CD1BAA778800AF02FF /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		365CE8CE1BAA778800AF02FF /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		365CE8D11BAA793800AF02FF /* HYUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUser.h; sourceTree = "<group>"; };
+		365CE8D21BAA793800AF02FF /* HYUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUser.m; sourceTree = "<group>"; };
 		367109D732E0D6EEDC40D551 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		70885C7976DBE22F591F5B72 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B7BCFC8D13BE4C20D1968C04 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 		364D01641BA73DA400674603 /* HairYourWay */ = {
 			isa = PBXGroup;
 			children = (
+				365CE8CA1BAA772C00AF02FF /* Classes */,
 				364D01691BA73DA400674603 /* AppDelegate.h */,
 				364D016A1BA73DA400674603 /* AppDelegate.m */,
 				364D016F1BA73DA400674603 /* ViewController.h */,
@@ -139,6 +146,41 @@
 				364D01831BA73DA400674603 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		365CE8CA1BAA772C00AF02FF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				365CE8D01BAA791D00AF02FF /* DataModels */,
+				365CE8CC1BAA777700AF02FF /* SignUp */,
+				365CE8CB1BAA772C00AF02FF /* Home */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		365CE8CB1BAA772C00AF02FF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		365CE8CC1BAA777700AF02FF /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				365CE8CD1BAA778800AF02FF /* SignUpViewController.h */,
+				365CE8CE1BAA778800AF02FF /* SignUpViewController.m */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		365CE8D01BAA791D00AF02FF /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				365CE8D11BAA793800AF02FF /* HYUser.h */,
+				365CE8D21BAA793800AF02FF /* HYUser.m */,
+			);
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 		62E2BE537CD09FDCFAB36773 /* Pods */ = {
@@ -294,6 +336,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				364D016B1BA73DA400674603 /* AppDelegate.m in Sources */,
+				365CE8D31BAA793800AF02FF /* HYUser.m in Sources */,
+				365CE8CF1BAA778800AF02FF /* SignUpViewController.m in Sources */,
 				364D01681BA73DA400674603 /* main.m in Sources */,
 				364D01711BA73DA400674603 /* ViewController.m in Sources */,
 				364D016E1BA73DA400674603 /* HairYourWay.xcdatamodeld in Sources */,
