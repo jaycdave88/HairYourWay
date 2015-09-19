@@ -6,15 +6,18 @@
 //  Copyright (c) 2015 DEV MODE. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "WelcomeViewController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <CoreData/CoreData.h>
+#import "AppDelegate.h"
+#import "HYUser.h"
 
-@interface ViewController ()
+@interface WelcomeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation WelcomeViewController
 @synthesize loginButton;
 
 
@@ -25,8 +28,27 @@
     [loginButton setDelegate:self];
 }
 
+/**
+    User defined function
+ */
+- (void)validateAndSignInUser {
+    NSFetchRequest * fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"HYUser"];
+    NSSortDescriptor* sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"firstName" ascending:YES];
+    [fetchRequest setSortDescriptors:@[sortDescriptor]];
+
+    AppDelegate* delegateObject = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    NSManagedObjectContext* context = [delegateObject managedObjectContext];
+    NSError* fetchError = nil;
+    NSArray* matchingResults = [context executeFetchRequest:fetchRequest error:&fetchError];
+    if (!fetchError) {
+        HYUser* user = [matchingResults firstObject];
+        [_lblWelcomeMessage setText:[NSString stringWithFormat:@"Welcome, %@ %@", user.firstName, user.lastName]];
+    }
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    [self validateAndSignInUser];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
@@ -73,10 +95,11 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
 #pragma - Login Button Actions
 
 - (IBAction)btnEmailSignUp:(id)sender {
-
+    // will trigger next sign_up view
 }
 
 - (IBAction)btnEmailLogin:(id)sender {
+    
 
 }
 @end

@@ -8,7 +8,7 @@
 
 #import "SignUpViewController.h"
 #import "AppDelegate.h"
-
+#import "HYUser.h"
 @interface SignUpViewController (){
     NSManagedObjectContext *context;
 }
@@ -58,24 +58,11 @@
 
 - (IBAction)btnUserDataSave:(id)sender {
 
-    NSEntityDescription * entityDescription = [NSEntityDescription entityForName:@"HYUser" inManagedObjectContext:context];
-    NSManagedObject *newUser = [[NSManagedObject alloc]initWithEntity:entityDescription insertIntoManagedObjectContext:context];
-    NSString *gender = NULL;
+
+    HYUser* signUpUserObject = [NSEntityDescription insertNewObjectForEntityForName:@"HYUser" inManagedObjectContext:context];
+
+    NSString *gender = nil;
     NSError *error = nil;
-
-    [newUser setValue:self.txtfFirstName.text forKey:@"firstName"];
-    [newUser setValue:self.txtfLastName.text forKey:@"lastName"];
-    [newUser setValue:self.txtfPhoneNumber.text forKey:@"phone"];
-    [newUser setValue:self.txtfUserEmail.text forKey:@"email"];
-
-    if (self.segmentControlGender.selectedSegmentIndex == 0) {
-        gender = @"Male";
-    }else if(self.segmentControlGender.selectedSegmentIndex == 1){
-        gender = @"Female";
-    }else{
-        NSLog(@"ERROR in gender saving");
-    }
-    [newUser setValue:gender forKey:@"gender"];
 
     if ([self.txtfFirstName.text  isEqual: @""] || [self.txtfLastName.text  isEqual: @""] || [self.txtfPhoneNumber.text  isEqual: @""] || [self.txtfUserEmail.text  isEqual: @""]) {
         UIAlertController* errorPrompt = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Required Fields", @"Required Fields")
@@ -88,12 +75,35 @@
         [errorPrompt addAction:okAction];
         [self presentViewController:errorPrompt animated:YES completion:NULL];
 
-    }else{
+    }
+    else {
+
+
+        self.labelStatus.text = @"Saved";
+        [signUpUserObject setValue:self.txtfFirstName.text forKey:@"firstName"];
+        [signUpUserObject setValue:self.txtfLastName.text forKey:@"lastName"];
+        [signUpUserObject setValue:self.txtfPhoneNumber.text forKey:@"phone"];
+        [signUpUserObject setValue:self.txtfUserEmail.text forKey:@"email"];
+
+        gender =  self.segmentControlGender.selectedSegmentIndex == 0 ? @"Male" : @"Female";
+
+        [signUpUserObject setValue:gender forKey:@"gender"];
+
         if(![context save:&error]) {
             self.labelStatus.text = @"Error";
-        }else{
-            [context save:&error];
-            self.labelStatus.text = @"Saved";
+            NSLog(@"%@, %@", error, error.localizedDescription);
+        }
+        else {
+            UIAlertController* errorPrompt = [UIAlertController alertControllerWithTitle:@"HairYourWay"
+                                                                                 message:NSLocalizedString(@"STR_NEW_USER_SIGN_UP_SUCCEEDED", @"Success")
+                                                                          preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction* okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK",nil)
+                                                               style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+                                                                   [self.navigationController popViewControllerAnimated:YES];
+                                                               }];
+            [errorPrompt addAction:okAction];
+            [self presentViewController:errorPrompt animated:YES completion:NULL];
+
         }
     }
 }
