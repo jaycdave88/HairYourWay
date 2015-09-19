@@ -25,18 +25,21 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [tableDataServices count];
+
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    static NSString *simpleTableIdentifier = @"Services";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-
+    tableView.allowsMultipleSelection =YES;
+    
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
     }
 
     cell.textLabel.text = [tableDataServices objectAtIndex:indexPath.row];
+
     return cell;
 }
 
