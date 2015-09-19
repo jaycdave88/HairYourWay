@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-@interface ViewController : UIViewController <FBSDKLoginButtonDelegate>
+@interface WelcomeViewController : UIViewController <FBSDKLoginButtonDelegate>
+
+@property (nonatomic , weak) IBOutlet UILabel* lblWelcomeMessage;
 
 @property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
 
@@ -17,7 +19,4 @@
 
 - (IBAction)btnEmailLogin:(id)sender;
 
-
-
 @end
-

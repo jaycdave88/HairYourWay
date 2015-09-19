@@ -11,7 +11,7 @@
 		364D01681BA73DA400674603 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D01671BA73DA400674603 /* main.m */; };
 		364D016B1BA73DA400674603 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D016A1BA73DA400674603 /* AppDelegate.m */; };
 		364D016E1BA73DA400674603 /* HairYourWay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 364D016C1BA73DA400674603 /* HairYourWay.xcdatamodeld */; };
-		364D01711BA73DA400674603 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D01701BA73DA400674603 /* ViewController.m */; };
+		364D01711BA73DA400674603 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D01701BA73DA400674603 /* WelcomeViewController.m */; };
 		364D01741BA73DA400674603 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364D01721BA73DA400674603 /* Main.storyboard */; };
 		364D01761BA73DA400674603 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364D01751BA73DA400674603 /* Images.xcassets */; };
 		364D01791BA73DA400674603 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364D01771BA73DA400674603 /* LaunchScreen.xib */; };
@@ -21,6 +21,7 @@
 		364D01931BA73FC100674603 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D01901BA73FC100674603 /* FBSDKShareKit.framework */; };
 		365CE8CF1BAA778800AF02FF /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 365CE8CE1BAA778800AF02FF /* SignUpViewController.m */; };
 		365CE8D31BAA793800AF02FF /* HYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 365CE8D21BAA793800AF02FF /* HYUser.m */; };
+		3693D2911BAD01E500E84EBF /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3693D2901BAD01E500E84EBF /* ServicesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +41,8 @@
 		364D01691BA73DA400674603 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		364D016A1BA73DA400674603 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		364D016D1BA73DA400674603 /* HairYourWay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HairYourWay.xcdatamodel; sourceTree = "<group>"; };
-		364D016F1BA73DA400674603 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		364D01701BA73DA400674603 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		364D016F1BA73DA400674603 /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		364D01701BA73DA400674603 /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		364D01731BA73DA400674603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		364D01751BA73DA400674603 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		364D01781BA73DA400674603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -56,6 +57,8 @@
 		365CE8D11BAA793800AF02FF /* HYUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUser.h; sourceTree = "<group>"; };
 		365CE8D21BAA793800AF02FF /* HYUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUser.m; sourceTree = "<group>"; };
 		367109D732E0D6EEDC40D551 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3693D28F1BAD01E500E84EBF /* ServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
+		3693D2901BAD01E500E84EBF /* ServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
 		70885C7976DBE22F591F5B72 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B7BCFC8D13BE4C20D1968C04 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,11 +111,12 @@
 		364D01641BA73DA400674603 /* HairYourWay */ = {
 			isa = PBXGroup;
 			children = (
+				3693D28E1BAD01C700E84EBF /* Services */,
 				365CE8CA1BAA772C00AF02FF /* Classes */,
 				364D01691BA73DA400674603 /* AppDelegate.h */,
 				364D016A1BA73DA400674603 /* AppDelegate.m */,
-				364D016F1BA73DA400674603 /* ViewController.h */,
-				364D01701BA73DA400674603 /* ViewController.m */,
+				364D016F1BA73DA400674603 /* WelcomeViewController.h */,
+				364D01701BA73DA400674603 /* WelcomeViewController.m */,
 				364D01721BA73DA400674603 /* Main.storyboard */,
 				364D01751BA73DA400674603 /* Images.xcassets */,
 				364D01771BA73DA400674603 /* LaunchScreen.xib */,
@@ -181,6 +185,15 @@
 				365CE8D21BAA793800AF02FF /* HYUser.m */,
 			);
 			path = DataModels;
+			sourceTree = "<group>";
+		};
+		3693D28E1BAD01C700E84EBF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3693D28F1BAD01E500E84EBF /* ServicesViewController.h */,
+				3693D2901BAD01E500E84EBF /* ServicesViewController.m */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		62E2BE537CD09FDCFAB36773 /* Pods */ = {
@@ -335,11 +348,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3693D2911BAD01E500E84EBF /* ServicesViewController.m in Sources */,
 				364D016B1BA73DA400674603 /* AppDelegate.m in Sources */,
 				365CE8D31BAA793800AF02FF /* HYUser.m in Sources */,
 				365CE8CF1BAA778800AF02FF /* SignUpViewController.m in Sources */,
 				364D01681BA73DA400674603 /* main.m in Sources */,
-				364D01711BA73DA400674603 /* ViewController.m in Sources */,
+				364D01711BA73DA400674603 /* WelcomeViewController.m in Sources */,
 				364D016E1BA73DA400674603 /* HairYourWay.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
