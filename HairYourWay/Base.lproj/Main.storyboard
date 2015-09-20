@@ -287,10 +287,10 @@
             </objects>
             <point key="canvasLocation" x="1033" y="259"/>
         </scene>
-        <!--Calendar View Controller-->
+        <!--View Controller-->
         <scene sceneID="h3i-T5-tjm">
             <objects>
-                <viewController id="EHw-nf-pH8" customClass="HYCalendarViewController" sceneMemberID="viewController">
+                <viewController id="EHw-nf-pH8" customClass="VRGViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZwD-hH-ka3"/>
                         <viewControllerLayoutGuide type="bottom" id="EUy-Ov-iuz"/>
@@ -306,8 +306,8 @@
                                     <constraint firstAttribute="height" constant="290" id="QDq-RM-29N"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="dataSource" destination="EHw-nf-pH8" id="94g-hy-Q7o"/>
-                                    <outlet property="delegate" destination="EHw-nf-pH8" id="Muw-ya-4e4"/>
+                                    <outlet property="dataSource" destination="EHw-nf-pH8" id="XcH-Lx-4z1"/>
+                                    <outlet property="delegate" destination="EHw-nf-pH8" id="wob-Yf-cIw"/>
                                 </connections>
                             </tableView>
                         </subviews>

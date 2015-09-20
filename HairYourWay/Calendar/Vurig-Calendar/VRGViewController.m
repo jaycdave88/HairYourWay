@@ -15,7 +15,9 @@
 
 @end
 
-@implementation VRGViewController
+@implementation VRGViewController{
+    NSArray *calendarTableData;
+}
 
 - (void)viewDidLoad
 {
@@ -24,10 +26,9 @@
     
     VRGCalendarView *calendar = [[VRGCalendarView alloc] init];
     calendar.delegate=self;
+    calendar.center = self.view.center;
     [self.view addSubview:calendar];
-    
-    
-    
+    [self calendarTableViewData];
 }
 
 -(void)calendarView:(VRGCalendarView *)calendarView switchedToMonth:(int)month targetHeight:(float)targetHeight animated:(BOOL)animated {
@@ -53,5 +54,29 @@
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
+
+#pragma mark - User Defined Methods
+
+-(void)calendarTableViewData{
+    calendarTableData = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", nil];
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [calendarTableData count];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *simpleTableIdentifier = @"Services";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    cell.textLabel.text = [calendarTableData objectAtIndex:indexPath.row];
+
+    return cell;
+}
+
 
 @end
