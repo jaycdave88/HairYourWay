@@ -10,6 +10,6 @@
 #import "VRGCalendarView.h"
 
 
-@interface HYCalendarViewController : UIViewController<VRGCalendarViewDelegate>
+@interface HYCalendarViewController : UIViewController <VRGCalendarViewDelegate,UITableViewDelegate,UITableViewDataSource>
 
 @end
