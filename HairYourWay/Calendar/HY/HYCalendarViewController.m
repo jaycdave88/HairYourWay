@@ -21,7 +21,8 @@
 
     VRGCalendarView *calendar = [[VRGCalendarView alloc] init];
     calendar.delegate=self;
-    
+    calendar.center = self.view.center;
+
     [self.view addSubview:calendar];
 
 }
