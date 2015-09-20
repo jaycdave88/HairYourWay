@@ -260,7 +260,11 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                     <items>
                                         <navigationItem id="ubX-d9-lfB">
-                                            <barButtonItem key="rightBarButtonItem" title="Next" id="lK8-4j-Edl"/>
+                                            <barButtonItem key="rightBarButtonItem" title="Next" id="lK8-4j-Edl">
+                                                <connections>
+                                                    <segue destination="EHw-nf-pH8" kind="presentation" id="dfH-W9-gjv"/>
+                                                </connections>
+                                            </barButtonItem>
                                         </navigationItem>
                                     </items>
                                 </navigationBar>
@@ -282,6 +286,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HDt-8K-SHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1033" y="259"/>
+        </scene>
+        <!--Calendar View Controller-->
+        <scene sceneID="h3i-T5-tjm">
+            <objects>
+                <viewController id="EHw-nf-pH8" customClass="HYCalendarViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZwD-hH-ka3"/>
+                        <viewControllerLayoutGuide type="bottom" id="EUy-Ov-iuz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7TR-K0-kAV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oFO-CP-KJT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686" y="259"/>
         </scene>
     </scenes>
 </document>

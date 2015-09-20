@@ -22,6 +22,14 @@
 		365CE8CF1BAA778800AF02FF /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 365CE8CE1BAA778800AF02FF /* SignUpViewController.m */; };
 		365CE8D31BAA793800AF02FF /* HYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 365CE8D21BAA793800AF02FF /* HYUser.m */; };
 		3693D2911BAD01E500E84EBF /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3693D2901BAD01E500E84EBF /* ServicesViewController.m */; };
+		36EE16F01BAF118F00D2F489 /* VRGCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE16E81BAF118E00D2F489 /* VRGCalendarView.m */; };
+		36EE16F41BAF11A800D2F489 /* HYCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE16F31BAF11A800D2F489 /* HYCalendarViewController.m */; };
+		36EE16FD1BAF162F00D2F489 /* NSDate+convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE16DE1BAF118E00D2F489 /* NSDate+convenience.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		36EE16FF1BAF162F00D2F489 /* NSMutableArray+convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE16E01BAF118E00D2F489 /* NSMutableArray+convenience.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		36EE17011BAF162F00D2F489 /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE16E21BAF118E00D2F489 /* UIColor+expanded.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		36EE17031BAF162F00D2F489 /* UIView+convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE16E41BAF118E00D2F489 /* UIView+convenience.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		36EE17051BAF162F00D2F489 /* VRGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE16E61BAF118E00D2F489 /* VRGAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		36EE17081BAF162F00D2F489 /* VRGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE16EA1BAF118E00D2F489 /* VRGViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +49,8 @@
 		364D01691BA73DA400674603 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		364D016A1BA73DA400674603 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		364D016D1BA73DA400674603 /* HairYourWay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HairYourWay.xcdatamodel; sourceTree = "<group>"; };
-		364D016F1BA73DA400674603 /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
-		364D01701BA73DA400674603 /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		364D016F1BA73DA400674603 /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WelcomeViewController.h; path = HairYourWay/WelcomeViewController.h; sourceTree = SOURCE_ROOT; };
+		364D01701BA73DA400674603 /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WelcomeViewController.m; path = HairYourWay/WelcomeViewController.m; sourceTree = SOURCE_ROOT; };
 		364D01731BA73DA400674603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		364D01751BA73DA400674603 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		364D01781BA73DA400674603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -59,6 +67,22 @@
 		367109D732E0D6EEDC40D551 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3693D28F1BAD01E500E84EBF /* ServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
 		3693D2901BAD01E500E84EBF /* ServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
+		36EE16DD1BAF118E00D2F489 /* NSDate+convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+convenience.h"; sourceTree = "<group>"; };
+		36EE16DE1BAF118E00D2F489 /* NSDate+convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+convenience.m"; sourceTree = "<group>"; };
+		36EE16DF1BAF118E00D2F489 /* NSMutableArray+convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+convenience.h"; sourceTree = "<group>"; };
+		36EE16E01BAF118E00D2F489 /* NSMutableArray+convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+convenience.m"; sourceTree = "<group>"; };
+		36EE16E11BAF118E00D2F489 /* UIColor+expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+expanded.h"; sourceTree = "<group>"; };
+		36EE16E21BAF118E00D2F489 /* UIColor+expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+expanded.m"; sourceTree = "<group>"; };
+		36EE16E31BAF118E00D2F489 /* UIView+convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+convenience.h"; sourceTree = "<group>"; };
+		36EE16E41BAF118E00D2F489 /* UIView+convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+convenience.m"; sourceTree = "<group>"; };
+		36EE16E51BAF118E00D2F489 /* VRGAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRGAppDelegate.h; sourceTree = "<group>"; };
+		36EE16E61BAF118E00D2F489 /* VRGAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRGAppDelegate.m; sourceTree = "<group>"; };
+		36EE16E71BAF118E00D2F489 /* VRGCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRGCalendarView.h; sourceTree = "<group>"; };
+		36EE16E81BAF118E00D2F489 /* VRGCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRGCalendarView.m; sourceTree = "<group>"; };
+		36EE16E91BAF118E00D2F489 /* VRGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRGViewController.h; sourceTree = "<group>"; };
+		36EE16EA1BAF118E00D2F489 /* VRGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRGViewController.m; sourceTree = "<group>"; };
+		36EE16F21BAF11A800D2F489 /* HYCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCalendarViewController.h; sourceTree = "<group>"; };
+		36EE16F31BAF11A800D2F489 /* HYCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYCalendarViewController.m; sourceTree = "<group>"; };
 		70885C7976DBE22F591F5B72 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B7BCFC8D13BE4C20D1968C04 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,12 +135,9 @@
 		364D01641BA73DA400674603 /* HairYourWay */ = {
 			isa = PBXGroup;
 			children = (
-				3693D28E1BAD01C700E84EBF /* Services */,
 				365CE8CA1BAA772C00AF02FF /* Classes */,
 				364D01691BA73DA400674603 /* AppDelegate.h */,
 				364D016A1BA73DA400674603 /* AppDelegate.m */,
-				364D016F1BA73DA400674603 /* WelcomeViewController.h */,
-				364D01701BA73DA400674603 /* WelcomeViewController.m */,
 				364D01721BA73DA400674603 /* Main.storyboard */,
 				364D01751BA73DA400674603 /* Images.xcassets */,
 				364D01771BA73DA400674603 /* LaunchScreen.xib */,
@@ -155,18 +176,13 @@
 		365CE8CA1BAA772C00AF02FF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				36EE16D71BAF100A00D2F489 /* Welcome */,
+				3693D28E1BAD01C700E84EBF /* Services */,
+				36EE16DA1BAF118E00D2F489 /* Calendar */,
 				365CE8D01BAA791D00AF02FF /* DataModels */,
 				365CE8CC1BAA777700AF02FF /* SignUp */,
-				365CE8CB1BAA772C00AF02FF /* Home */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		365CE8CB1BAA772C00AF02FF /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		365CE8CC1BAA777700AF02FF /* SignUp */ = {
@@ -193,7 +209,58 @@
 				3693D28F1BAD01E500E84EBF /* ServicesViewController.h */,
 				3693D2901BAD01E500E84EBF /* ServicesViewController.m */,
 			);
-			path = Services;
+			name = Services;
+			path = ../Services;
+			sourceTree = "<group>";
+		};
+		36EE16D71BAF100A00D2F489 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				364D016F1BA73DA400674603 /* WelcomeViewController.h */,
+				364D01701BA73DA400674603 /* WelcomeViewController.m */,
+			);
+			name = Welcome;
+			path = ../Welcome;
+			sourceTree = "<group>";
+		};
+		36EE16DA1BAF118E00D2F489 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				36EE16DB1BAF118E00D2F489 /* HY */,
+				36EE16DC1BAF118E00D2F489 /* Vurig-Calendar */,
+			);
+			name = Calendar;
+			path = ../Calendar;
+			sourceTree = "<group>";
+		};
+		36EE16DB1BAF118E00D2F489 /* HY */ = {
+			isa = PBXGroup;
+			children = (
+				36EE16F21BAF11A800D2F489 /* HYCalendarViewController.h */,
+				36EE16F31BAF11A800D2F489 /* HYCalendarViewController.m */,
+			);
+			path = HY;
+			sourceTree = "<group>";
+		};
+		36EE16DC1BAF118E00D2F489 /* Vurig-Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				36EE16DD1BAF118E00D2F489 /* NSDate+convenience.h */,
+				36EE16DE1BAF118E00D2F489 /* NSDate+convenience.m */,
+				36EE16DF1BAF118E00D2F489 /* NSMutableArray+convenience.h */,
+				36EE16E01BAF118E00D2F489 /* NSMutableArray+convenience.m */,
+				36EE16E11BAF118E00D2F489 /* UIColor+expanded.h */,
+				36EE16E21BAF118E00D2F489 /* UIColor+expanded.m */,
+				36EE16E31BAF118E00D2F489 /* UIView+convenience.h */,
+				36EE16E41BAF118E00D2F489 /* UIView+convenience.m */,
+				36EE16E51BAF118E00D2F489 /* VRGAppDelegate.h */,
+				36EE16E61BAF118E00D2F489 /* VRGAppDelegate.m */,
+				36EE16E71BAF118E00D2F489 /* VRGCalendarView.h */,
+				36EE16E81BAF118E00D2F489 /* VRGCalendarView.m */,
+				36EE16E91BAF118E00D2F489 /* VRGViewController.h */,
+				36EE16EA1BAF118E00D2F489 /* VRGViewController.m */,
+			);
+			path = "Vurig-Calendar";
 			sourceTree = "<group>";
 		};
 		62E2BE537CD09FDCFAB36773 /* Pods */ = {
@@ -348,9 +415,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36EE16FD1BAF162F00D2F489 /* NSDate+convenience.m in Sources */,
+				36EE16FF1BAF162F00D2F489 /* NSMutableArray+convenience.m in Sources */,
+				36EE17011BAF162F00D2F489 /* UIColor+expanded.m in Sources */,
+				36EE17031BAF162F00D2F489 /* UIView+convenience.m in Sources */,
+				36EE17051BAF162F00D2F489 /* VRGAppDelegate.m in Sources */,
+				36EE17081BAF162F00D2F489 /* VRGViewController.m in Sources */,
 				3693D2911BAD01E500E84EBF /* ServicesViewController.m in Sources */,
 				364D016B1BA73DA400674603 /* AppDelegate.m in Sources */,
 				365CE8D31BAA793800AF02FF /* HYUser.m in Sources */,
+				36EE16F01BAF118F00D2F489 /* VRGCalendarView.m in Sources */,
+				36EE16F41BAF11A800D2F489 /* HYCalendarViewController.m in Sources */,
 				365CE8CF1BAA778800AF02FF /* SignUpViewController.m in Sources */,
 				364D01681BA73DA400674603 /* main.m in Sources */,
 				364D01711BA73DA400674603 /* WelcomeViewController.m in Sources */,
