@@ -28,6 +28,8 @@
     [self calendarTableViewData];
 }
 
+#pragma mark - Calendar Code
+
 -(void)calendarView:(VRGCalendarView *)calendarView switchedToMonth:(int)month targetHeight:(float)targetHeight animated:(BOOL)animated {
     if (month==[[NSDate date] month]) {
         NSArray *dates = [NSArray arrayWithObjects:[NSNumber numberWithInt:1],[NSNumber numberWithInt:5], nil];
@@ -39,18 +41,11 @@
     NSLog(@"Selected date = %@",date);
 }
 
-
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
+
 
 #pragma mark - User Defined Table View Methods
 
@@ -79,7 +74,12 @@
 
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     NSLog(@"You have selected: %@",cell.text);
+}
 
+#pragma mark - User Defined Methods
+
+- (void)segueWhenUserSelectsRequiredFields{
+    // when the user selects the date and time then they will be sent to the next screen
 }
 
 
