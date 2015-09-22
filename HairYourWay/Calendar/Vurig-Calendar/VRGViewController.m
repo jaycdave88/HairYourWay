@@ -39,6 +39,11 @@
 
 -(void)calendarView:(VRGCalendarView *)calendarView dateSelected:(NSDate *)date {
     NSLog(@"Selected date = %@",date);
+
+    calendarTableData = [[NSArray alloc]initWithObjects:@"1", @"2", @"3", nil];
+
+
+
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
