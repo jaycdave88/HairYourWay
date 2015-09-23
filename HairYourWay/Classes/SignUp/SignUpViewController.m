@@ -9,6 +9,7 @@
 #import "SignUpViewController.h"
 #import "AppDelegate.h"
 #import "HYUser.h"
+#import "HYAlertViewController.h"
 //#import <Parse.h>
 
 @interface SignUpViewController (){
@@ -84,6 +85,7 @@
     }
     else {
 
+        HYAlertViewController * alertVC = [self.storyboard instantiateViewControllerWithIdentifier:@"kHYAlertViewController"];
 
         self.labelStatus.text = @"Saved";
         [signUpUserObject setValue:self.txtfFirstName.text forKey:@"firstName"];
@@ -95,22 +97,15 @@
 
         [signUpUserObject setValue:gender forKey:@"gender"];
 
+
         if(![context save:&error]) {
             self.labelStatus.text = @"Error";
             NSLog(@"%@, %@", error, error.localizedDescription);
         }
         else {
-            UIAlertController* errorPrompt = [UIAlertController alertControllerWithTitle:@"HairYourWay"
-                                                                                 message:NSLocalizedString(@"STR_NEW_USER_SIGN_UP_SUCCEEDED", @"Success")
-                                                                          preferredStyle:UIAlertControllerStyleAlert];
-            UIAlertAction* okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK",nil)
-                                                               style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-                                                                   [self.navigationController popViewControllerAnimated:YES];
-                                                               }];
-            [errorPrompt addAction:okAction];
-            [self presentViewController:errorPrompt animated:YES completion:NULL];
-
+            [self.navigationController pushViewController:alertVC animated:YES];
         }
     }
+
 }
 @end
