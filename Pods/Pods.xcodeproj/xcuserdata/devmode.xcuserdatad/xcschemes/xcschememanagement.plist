@@ -9,12 +9,32 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FBSDKCoreKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKLoginKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKShareKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>JTCalendar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>Pods-HairYourWay.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,37 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>08161529B987A8BC534E3F0699E241B4</key>
+		<key>25241997E96AB89DA0D953B957B84F8F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0A123DE1DBA718A450CEB9353E7BD058</key>
+		<key>82DCE9CB0A0A769EA577C65837366A36</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>355790654F2F89ECFDF6419131514061</key>
+		<key>A3B276E0FE867149D473DB1268FAE91E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5D8129E3793C29AAEEF26CE316A9DDC0</key>
+		<key>BF0A95C6CEE040B908FDBB00C22608C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>86C1FAD11AA3F1015775821B7F85DB35</key>
+		<key>C14392ED6AB97CC0337276ACB2C4E7C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8FA9C31CEB4DA668A7F24ADFD1533410</key>
+		<key>DA41F7F69B3DC1AFD651C2F27CA520B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A990A0DDC687F1EFF114B77ADAA1A2E7</key>
+		<key>E5C6A34B339579E38305F21131E3864E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
