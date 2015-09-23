@@ -9,6 +9,8 @@
 #import "SignUpViewController.h"
 #import "AppDelegate.h"
 #import "HYUser.h"
+//#import <Parse.h>
+
 @interface SignUpViewController (){
     NSManagedObjectContext *context;
 }
@@ -22,6 +24,10 @@
     // Do any additional setup after loading the view.
     AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
     context = [appDelegate managedObjectContext];
+
+//    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+//    testObject[@"foo"] = @"bar";
+//    [testObject saveInBackground];
 }
 
 #pragma mark - UITouch Methods

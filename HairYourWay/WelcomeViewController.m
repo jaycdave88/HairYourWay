@@ -32,6 +32,8 @@
     User defined function
  */
 - (void)validateAndSignInUser {
+
+
     NSFetchRequest * fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"HYUser"];
     NSSortDescriptor* sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"firstName" ascending:YES];
     [fetchRequest setSortDescriptors:@[sortDescriptor]];
@@ -43,6 +45,9 @@
     if (!fetchError) {
         HYUser* user = [matchingResults firstObject];
         [_lblWelcomeMessage setText:[NSString stringWithFormat:@"Welcome, %@ %@", user.firstName, user.lastName]];
+    }
+    if ([matchingResults count] == 0) {
+        self.lblWelcomeMessage.text = @"Welcome, Guest";
     }
 }
 

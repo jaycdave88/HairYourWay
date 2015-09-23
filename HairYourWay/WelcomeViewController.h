@@ -15,8 +15,6 @@
 
 @property (weak, nonatomic) IBOutlet FBSDKLoginButton *loginButton;
 
-- (IBAction)btnEmailSignUp:(id)sender;
 
-- (IBAction)btnEmailLogin:(id)sender;
 
 @end

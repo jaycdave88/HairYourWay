@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "VRGCalendarView.h"
 
-@interface VRGViewController : UIViewController <VRGCalendarViewDelegate>
-
+@interface VRGViewController : UIViewController <VRGCalendarViewDelegate,UITableViewDelegate,UITableViewDataSource>
 @end
