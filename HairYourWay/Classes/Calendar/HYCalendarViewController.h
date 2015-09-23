@@ -11,7 +11,7 @@
 // https://github.com/jonathantribouharet/JTCalendar
 #import <JTCalendar/JTCalendar.h>
 
-@interface HYCalendarViewController : UIViewController <JTCalendarDelegate>
+@interface HYCalendarViewController : UIViewController <JTCalendarDelegate,UITableViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet JTCalendarMenuView *calendarMenuView;
 @property (weak, nonatomic) IBOutlet JTHorizontalCalendarView *calendarContentView;
