@@ -16,6 +16,7 @@
 		364D01851BA73DA400674603 /* HairYourWayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D01841BA73DA400674603 /* HairYourWayTests.m */; };
 		365CE8CF1BAA778800AF02FF /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 365CE8CE1BAA778800AF02FF /* SignUpViewController.m */; };
 		365CE8D31BAA793800AF02FF /* HYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 365CE8D21BAA793800AF02FF /* HYUser.m */; };
+		36DA62941BB34BA500702EAB /* HYAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DA62931BB34BA500702EAB /* HYAlertViewController.m */; };
 		462856E31BB265870040A711 /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 462856E21BB265870040A711 /* ServicesViewController.m */; };
 		462856E71BB265910040A711 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 462856E61BB265910040A711 /* WelcomeViewController.m */; };
 		462856EA1BB266570040A711 /* HYCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 462856E91BB266570040A711 /* HYCalendarViewController.m */; };
@@ -50,6 +51,8 @@
 		365CE8D11BAA793800AF02FF /* HYUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUser.h; sourceTree = "<group>"; };
 		365CE8D21BAA793800AF02FF /* HYUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUser.m; sourceTree = "<group>"; };
 		367109D732E0D6EEDC40D551 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		36DA62921BB34BA500702EAB /* HYAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYAlertViewController.h; sourceTree = "<group>"; };
+		36DA62931BB34BA500702EAB /* HYAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYAlertViewController.m; sourceTree = "<group>"; };
 		462856E11BB265870040A711 /* ServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
 		462856E21BB265870040A711 /* ServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
 		462856E51BB265910040A711 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
@@ -144,6 +147,7 @@
 		365CE8CA1BAA772C00AF02FF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				36DA62911BB34B6500702EAB /* Alert User */,
 				462856E41BB265910040A711 /* Welcome */,
 				462856E01BB265870040A711 /* Services */,
 				462856DF1BB265810040A711 /* Calendar */,
@@ -169,6 +173,15 @@
 				365CE8D21BAA793800AF02FF /* HYUser.m */,
 			);
 			path = DataModels;
+			sourceTree = "<group>";
+		};
+		36DA62911BB34B6500702EAB /* Alert User */ = {
+			isa = PBXGroup;
+			children = (
+				36DA62921BB34BA500702EAB /* HYAlertViewController.h */,
+				36DA62931BB34BA500702EAB /* HYAlertViewController.m */,
+			);
+			path = "Alert User";
 			sourceTree = "<group>";
 		};
 		462856DF1BB265810040A711 /* Calendar */ = {
@@ -357,6 +370,7 @@
 				364D01681BA73DA400674603 /* main.m in Sources */,
 				462856E31BB265870040A711 /* ServicesViewController.m in Sources */,
 				462856E71BB265910040A711 /* WelcomeViewController.m in Sources */,
+				36DA62941BB34BA500702EAB /* HYAlertViewController.m in Sources */,
 				364D016E1BA73DA400674603 /* HairYourWay.xcdatamodeld in Sources */,
 				462856EA1BB266570040A711 /* HYCalendarViewController.m in Sources */,
 			);

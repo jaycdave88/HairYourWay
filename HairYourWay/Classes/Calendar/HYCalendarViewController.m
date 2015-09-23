@@ -7,9 +7,14 @@
 //
 
 #import "HYCalendarViewController.h"
+#import "AppDelegate.h"
+#import <CoreData/CoreData.h>
+#import "SignUpViewController.h"
+#import "HYAlertViewController.h"
 
 @interface HYCalendarViewController(){
     NSData * dateSelected;
+    NSArray * arrCalendarData;
 }
 
 @end
@@ -27,6 +32,8 @@
     [_calendarManager setMenuView:_calendarMenuView];
     [_calendarManager setContentView:_calendarContentView];
     [_calendarManager setDate:[NSDate date]];
+
+    [self calendarTableViewData];
 }
 
 #pragma mark - Calendar Methods
@@ -49,7 +56,6 @@
     else if(dateSelected && [_calendarManager.dateHelper date:dateSelected isTheSameDayThan:dayView.date]){
         dayView.circleView.hidden = NO;
         dayView.circleView.backgroundColor = [UIColor colorWithRed:211.0/225.0 green:211.0/225.0 blue:211.0/225.0 alpha:1];
-        dayView.dotView.backgroundColor = [UIColor whiteColor];
         dayView.textLabel.textColor = [UIColor blackColor];
     }
     // Another day of the current month
@@ -79,30 +85,58 @@
 
 # pragma mark - Appointment TableView Methods
 
--(void)appointmentData{
-    arrAppointmentList = [NSArray arrayWithObjects:@"1:30","2:30",nil];
+-(void)calendarTableViewData{
+    arrCalendarData = [[NSArray alloc]initWithObjects:@"10:00 AM",@"11:00 AM",@"12:00 PM",@"1:00 PM",@"2:00 PM",@"3:00 PM",@"4:00 PM",@"5:00 PM", @"6:00 PM", nil];
 }
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [arrAppointmentList count];
-
+    return [arrCalendarData count];
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
-
-    cell.textLabel.text = [arrAppointmentList objectAtIndex:indexPath.row];
+    static NSString *simpleTableIdentifier = @"Services";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    cell.textLabel.text = [arrCalendarData objectAtIndex:indexPath.row];
 
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//    NSLog(@"You have selected: %@",cell.text);
+    [self returningUserOrNewUser];
+
 }
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
+-(void)returningUserOrNewUser{
+    NSFetchRequest * fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"HYUser"];
+    NSSortDescriptor* sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"firstName" ascending:YES];
+    [fetchRequest setSortDescriptors:@[sortDescriptor]];
+
+    AppDelegate* delegateObject = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    NSManagedObjectContext* context = [delegateObject managedObjectContext];
+    NSError* fetchError = nil;
+    NSArray* matchingResults = [context executeFetchRequest:fetchRequest error:&fetchError];
+
+    SignUpViewController * signUpVC = [self.storyboard instantiateViewControllerWithIdentifier:@"kSceneSignUpViewController"];
+
+    HYAlertViewController * alertVC = [self.storyboard instantiateViewControllerWithIdentifier:@"kHYAlertViewController"];
+
+// check if the user is signed up
+    if ([matchingResults count] == 0) {
+        // send to kSceneSignUpViewController
+       [self.navigationController pushViewController:signUpVC animated:YES];
+    }else{
+        // send to kHYAlertViewController
+        [self.navigationController pushViewController:alertVC animated:YES];
+    }
+    
 }
 
 

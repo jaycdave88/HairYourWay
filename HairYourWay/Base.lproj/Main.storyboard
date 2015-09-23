@@ -261,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VWQ-65-jhd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1391" y="257"/>
+            <point key="canvasLocation" x="2280" y="722"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZOU-m2-paj">
@@ -386,6 +386,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="EHw-nf-pH8" id="U6X-cc-bib"/>
+                                    <outlet property="delegate" destination="EHw-nf-pH8" id="h88-3R-Lgy"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -411,10 +415,10 @@
             </objects>
             <point key="canvasLocation" x="1573" y="257"/>
         </scene>
-        <!--View Controller-->
+        <!--Alert View Controller-->
         <scene sceneID="ont-R3-JYi">
             <objects>
-                <viewController id="l5I-nT-OVk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="kHYAlertViewController" id="l5I-nT-OVk" customClass="HYAlertViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vwh-Y7-ai6"/>
                         <viewControllerLayoutGuide type="bottom" id="BcO-fp-SDV"/>
@@ -427,7 +431,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUD-af-bbg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2249" y="257"/>
+            <point key="canvasLocation" x="2280" y="10"/>
         </scene>
     </scenes>
 </document>
