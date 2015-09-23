@@ -11,6 +11,7 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <Parse.h>
 
+
 @interface AppDelegate ()
 
 @end
@@ -33,12 +34,24 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // [Optional] Power your app with Local Datastore. For more info, go to
+
+    [Parse enableLocalDatastore];
+
+    // Initialize Parse.
     [Parse setApplicationId:@"6bekM4QiC1ZPh0KXH4NRMeflflGh4klZKvWATv7b"
                   clientKey:@"Z5jHsK5RUBwCMNMKI7r6THDWVW3lKyQ9fLz7KJBr"];
+
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+
+    // ...
+
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions];
-
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

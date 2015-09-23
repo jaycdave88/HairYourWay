@@ -25,7 +25,7 @@
     calendar.delegate=self;
     calendar.center = self.view.center;
     [self.view addSubview:calendar];
-    [self calendarTableViewData];
+//    [self calendarTableViewData];
 }
 
 #pragma mark - Calendar Code
@@ -40,8 +40,9 @@
 -(void)calendarView:(VRGCalendarView *)calendarView dateSelected:(NSDate *)date {
     NSLog(@"Selected date = %@",date);
 
-    calendarTableData = [[NSArray alloc]initWithObjects:@"1", @"2", @"3", nil];
-
+    if (date == date) {
+        NSLog(@"date is the same");
+    }
 
 
 }
@@ -83,9 +84,7 @@
 
 #pragma mark - User Defined Methods
 
-- (void)segueWhenUserSelectsRequiredFields{
-    // when the user selects the date and time then they will be sent to the next screen
-}
+
 
 
 @end
