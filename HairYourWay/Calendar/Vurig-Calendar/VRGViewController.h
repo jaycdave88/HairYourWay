@@ -10,4 +10,5 @@
 #import "VRGCalendarView.h"
 
 @interface VRGViewController : UIViewController <VRGCalendarViewDelegate,UITableViewDelegate,UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 @end
