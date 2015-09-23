@@ -1,1 +1,15 @@
-pod "Parse"
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+
+target 'HairYourWay' do
+pod  'FBSDKCoreKit'
+pod  'FBSDKLoginKit'
+pod  'FBSDKShareKit'
+pod  'Parse'
+pod  'JTCalendar'
+end
+
+target 'HairYourWayTests' do
+
+end
+

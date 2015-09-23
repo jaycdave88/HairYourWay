@@ -7,28 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E11DEE82C2AA011B2080DC6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 367109D732E0D6EEDC40D551 /* libPods.a */; };
 		364D01681BA73DA400674603 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D01671BA73DA400674603 /* main.m */; };
 		364D016B1BA73DA400674603 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D016A1BA73DA400674603 /* AppDelegate.m */; };
 		364D016E1BA73DA400674603 /* HairYourWay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 364D016C1BA73DA400674603 /* HairYourWay.xcdatamodeld */; };
-		364D01711BA73DA400674603 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D01701BA73DA400674603 /* WelcomeViewController.m */; };
 		364D01741BA73DA400674603 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364D01721BA73DA400674603 /* Main.storyboard */; };
 		364D01761BA73DA400674603 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364D01751BA73DA400674603 /* Images.xcassets */; };
 		364D01791BA73DA400674603 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364D01771BA73DA400674603 /* LaunchScreen.xib */; };
 		364D01851BA73DA400674603 /* HairYourWayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 364D01841BA73DA400674603 /* HairYourWayTests.m */; };
-		364D01911BA73FC100674603 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D018E1BA73FC100674603 /* FBSDKCoreKit.framework */; };
-		364D01921BA73FC100674603 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D018F1BA73FC100674603 /* FBSDKLoginKit.framework */; };
-		364D01931BA73FC100674603 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364D01901BA73FC100674603 /* FBSDKShareKit.framework */; };
 		365CE8CF1BAA778800AF02FF /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 365CE8CE1BAA778800AF02FF /* SignUpViewController.m */; };
 		365CE8D31BAA793800AF02FF /* HYUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 365CE8D21BAA793800AF02FF /* HYUser.m */; };
-		3693D2911BAD01E500E84EBF /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3693D2901BAD01E500E84EBF /* ServicesViewController.m */; };
-		36EE16F01BAF118F00D2F489 /* VRGCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE16E81BAF118E00D2F489 /* VRGCalendarView.m */; };
-		36EE16FD1BAF162F00D2F489 /* NSDate+convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE16DE1BAF118E00D2F489 /* NSDate+convenience.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		36EE16FF1BAF162F00D2F489 /* NSMutableArray+convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE16E01BAF118E00D2F489 /* NSMutableArray+convenience.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		36EE17011BAF162F00D2F489 /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE16E21BAF118E00D2F489 /* UIColor+expanded.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		36EE17031BAF162F00D2F489 /* UIView+convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE16E41BAF118E00D2F489 /* UIView+convenience.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		36EE17051BAF162F00D2F489 /* VRGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE16E61BAF118E00D2F489 /* VRGAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		36EE17081BAF162F00D2F489 /* VRGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EE16EA1BAF118E00D2F489 /* VRGViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		462856E31BB265870040A711 /* ServicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 462856E21BB265870040A711 /* ServicesViewController.m */; };
+		462856E71BB265910040A711 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 462856E61BB265910040A711 /* WelcomeViewController.m */; };
+		462856EA1BB266570040A711 /* HYCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 462856E91BB266570040A711 /* HYCalendarViewController.m */; };
+		5A4332D64DDD694D97DA0235 /* libPods-HairYourWay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DF05D22D6C90C20389E19D /* libPods-HairYourWay.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,40 +39,26 @@
 		364D01691BA73DA400674603 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		364D016A1BA73DA400674603 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		364D016D1BA73DA400674603 /* HairYourWay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HairYourWay.xcdatamodel; sourceTree = "<group>"; };
-		364D016F1BA73DA400674603 /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WelcomeViewController.h; path = HairYourWay/WelcomeViewController.h; sourceTree = SOURCE_ROOT; };
-		364D01701BA73DA400674603 /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WelcomeViewController.m; path = HairYourWay/WelcomeViewController.m; sourceTree = SOURCE_ROOT; };
 		364D01731BA73DA400674603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		364D01751BA73DA400674603 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		364D01781BA73DA400674603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		364D017E1BA73DA400674603 /* HairYourWayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HairYourWayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		364D01831BA73DA400674603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		364D01841BA73DA400674603 /* HairYourWayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HairYourWayTests.m; sourceTree = "<group>"; };
-		364D018E1BA73FC100674603 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		364D018F1BA73FC100674603 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		364D01901BA73FC100674603 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		365CE8CD1BAA778800AF02FF /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		365CE8CE1BAA778800AF02FF /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		365CE8D11BAA793800AF02FF /* HYUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYUser.h; sourceTree = "<group>"; };
 		365CE8D21BAA793800AF02FF /* HYUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYUser.m; sourceTree = "<group>"; };
 		367109D732E0D6EEDC40D551 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3693D28F1BAD01E500E84EBF /* ServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
-		3693D2901BAD01E500E84EBF /* ServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
-		36EE16DD1BAF118E00D2F489 /* NSDate+convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+convenience.h"; path = "Vurig-Calendar/NSDate+convenience.h"; sourceTree = "<group>"; };
-		36EE16DE1BAF118E00D2F489 /* NSDate+convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+convenience.m"; path = "Vurig-Calendar/NSDate+convenience.m"; sourceTree = "<group>"; };
-		36EE16DF1BAF118E00D2F489 /* NSMutableArray+convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+convenience.h"; path = "Vurig-Calendar/NSMutableArray+convenience.h"; sourceTree = "<group>"; };
-		36EE16E01BAF118E00D2F489 /* NSMutableArray+convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+convenience.m"; path = "Vurig-Calendar/NSMutableArray+convenience.m"; sourceTree = "<group>"; };
-		36EE16E11BAF118E00D2F489 /* UIColor+expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+expanded.h"; path = "Vurig-Calendar/UIColor+expanded.h"; sourceTree = "<group>"; };
-		36EE16E21BAF118E00D2F489 /* UIColor+expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+expanded.m"; path = "Vurig-Calendar/UIColor+expanded.m"; sourceTree = "<group>"; };
-		36EE16E31BAF118E00D2F489 /* UIView+convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+convenience.h"; path = "Vurig-Calendar/UIView+convenience.h"; sourceTree = "<group>"; };
-		36EE16E41BAF118E00D2F489 /* UIView+convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+convenience.m"; path = "Vurig-Calendar/UIView+convenience.m"; sourceTree = "<group>"; };
-		36EE16E51BAF118E00D2F489 /* VRGAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VRGAppDelegate.h; path = "Vurig-Calendar/VRGAppDelegate.h"; sourceTree = "<group>"; };
-		36EE16E61BAF118E00D2F489 /* VRGAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VRGAppDelegate.m; path = "Vurig-Calendar/VRGAppDelegate.m"; sourceTree = "<group>"; };
-		36EE16E71BAF118E00D2F489 /* VRGCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VRGCalendarView.h; path = "Vurig-Calendar/VRGCalendarView.h"; sourceTree = "<group>"; };
-		36EE16E81BAF118E00D2F489 /* VRGCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VRGCalendarView.m; path = "Vurig-Calendar/VRGCalendarView.m"; sourceTree = "<group>"; };
-		36EE16E91BAF118E00D2F489 /* VRGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VRGViewController.h; path = "Vurig-Calendar/VRGViewController.h"; sourceTree = "<group>"; };
-		36EE16EA1BAF118E00D2F489 /* VRGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VRGViewController.m; path = "Vurig-Calendar/VRGViewController.m"; sourceTree = "<group>"; };
-		70885C7976DBE22F591F5B72 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		B7BCFC8D13BE4C20D1968C04 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		462856E11BB265870040A711 /* ServicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesViewController.h; sourceTree = "<group>"; };
+		462856E21BB265870040A711 /* ServicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesViewController.m; sourceTree = "<group>"; };
+		462856E51BB265910040A711 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		462856E61BB265910040A711 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		462856E81BB266570040A711 /* HYCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCalendarViewController.h; sourceTree = "<group>"; };
+		462856E91BB266570040A711 /* HYCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYCalendarViewController.m; sourceTree = "<group>"; };
+		48DF05D22D6C90C20389E19D /* libPods-HairYourWay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HairYourWay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		647E5E98253058622F45879A /* Pods-HairYourWay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HairYourWay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HairYourWay/Pods-HairYourWay.debug.xcconfig"; sourceTree = "<group>"; };
+		75581793B5000B39D2069CAB /* Pods-HairYourWay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HairYourWay.release.xcconfig"; path = "Pods/Target Support Files/Pods-HairYourWay/Pods-HairYourWay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				364D01931BA73FC100674603 /* FBSDKShareKit.framework in Frameworks */,
-				0E11DEE82C2AA011B2080DC6 /* libPods.a in Frameworks */,
-				364D01911BA73FC100674603 /* FBSDKCoreKit.framework in Frameworks */,
-				364D01921BA73FC100674603 /* FBSDKLoginKit.framework in Frameworks */,
+				5A4332D64DDD694D97DA0235 /* libPods-HairYourWay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,9 +83,6 @@
 		364D01591BA73DA400674603 = {
 			isa = PBXGroup;
 			children = (
-				364D018E1BA73FC100674603 /* FBSDKCoreKit.framework */,
-				364D018F1BA73FC100674603 /* FBSDKLoginKit.framework */,
-				364D01901BA73FC100674603 /* FBSDKShareKit.framework */,
 				364D01641BA73DA400674603 /* HairYourWay */,
 				364D01811BA73DA400674603 /* HairYourWayTests */,
 				364D01631BA73DA400674603 /* Products */,
@@ -173,9 +144,9 @@
 		365CE8CA1BAA772C00AF02FF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				36EE16D71BAF100A00D2F489 /* Welcome */,
-				3693D28E1BAD01C700E84EBF /* Services */,
-				36EE16DA1BAF118E00D2F489 /* Calendar */,
+				462856E41BB265910040A711 /* Welcome */,
+				462856E01BB265870040A711 /* Services */,
+				462856DF1BB265810040A711 /* Calendar */,
 				365CE8D01BAA791D00AF02FF /* DataModels */,
 				365CE8CC1BAA777700AF02FF /* SignUp */,
 			);
@@ -200,53 +171,38 @@
 			path = DataModels;
 			sourceTree = "<group>";
 		};
-		3693D28E1BAD01C700E84EBF /* Services */ = {
+		462856DF1BB265810040A711 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				3693D28F1BAD01E500E84EBF /* ServicesViewController.h */,
-				3693D2901BAD01E500E84EBF /* ServicesViewController.m */,
+				462856E81BB266570040A711 /* HYCalendarViewController.h */,
+				462856E91BB266570040A711 /* HYCalendarViewController.m */,
 			);
-			name = Services;
-			path = ../Services;
+			path = Calendar;
 			sourceTree = "<group>";
 		};
-		36EE16D71BAF100A00D2F489 /* Welcome */ = {
+		462856E01BB265870040A711 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				364D016F1BA73DA400674603 /* WelcomeViewController.h */,
-				364D01701BA73DA400674603 /* WelcomeViewController.m */,
+				462856E11BB265870040A711 /* ServicesViewController.h */,
+				462856E21BB265870040A711 /* ServicesViewController.m */,
 			);
-			name = Welcome;
-			path = ../Welcome;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		36EE16DA1BAF118E00D2F489 /* Calendar */ = {
+		462856E41BB265910040A711 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				36EE16DD1BAF118E00D2F489 /* NSDate+convenience.h */,
-				36EE16DE1BAF118E00D2F489 /* NSDate+convenience.m */,
-				36EE16DF1BAF118E00D2F489 /* NSMutableArray+convenience.h */,
-				36EE16E01BAF118E00D2F489 /* NSMutableArray+convenience.m */,
-				36EE16E11BAF118E00D2F489 /* UIColor+expanded.h */,
-				36EE16E21BAF118E00D2F489 /* UIColor+expanded.m */,
-				36EE16E31BAF118E00D2F489 /* UIView+convenience.h */,
-				36EE16E41BAF118E00D2F489 /* UIView+convenience.m */,
-				36EE16E51BAF118E00D2F489 /* VRGAppDelegate.h */,
-				36EE16E61BAF118E00D2F489 /* VRGAppDelegate.m */,
-				36EE16E71BAF118E00D2F489 /* VRGCalendarView.h */,
-				36EE16E81BAF118E00D2F489 /* VRGCalendarView.m */,
-				36EE16E91BAF118E00D2F489 /* VRGViewController.h */,
-				36EE16EA1BAF118E00D2F489 /* VRGViewController.m */,
+				462856E51BB265910040A711 /* WelcomeViewController.h */,
+				462856E61BB265910040A711 /* WelcomeViewController.m */,
 			);
-			name = Calendar;
-			path = ../Calendar;
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		62E2BE537CD09FDCFAB36773 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B7BCFC8D13BE4C20D1968C04 /* Pods.debug.xcconfig */,
-				70885C7976DBE22F591F5B72 /* Pods.release.xcconfig */,
+				75581793B5000B39D2069CAB /* Pods-HairYourWay.release.xcconfig */,
+				647E5E98253058622F45879A /* Pods-HairYourWay.debug.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -255,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				367109D732E0D6EEDC40D551 /* libPods.a */,
+				48DF05D22D6C90C20389E19D /* libPods-HairYourWay.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -266,11 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 364D01881BA73DA400674603 /* Build configuration list for PBXNativeTarget "HairYourWay" */;
 			buildPhases = (
-				08EB04A7501FF3A765EBBA1B /* Check Pods Manifest.lock */,
+				192A1D8B602BC6E35B49479E /* Check Pods Manifest.lock */,
 				364D015E1BA73DA400674603 /* Sources */,
 				364D015F1BA73DA400674603 /* Frameworks */,
 				364D01601BA73DA400674603 /* Resources */,
-				5FBE88AA20AB3CCBFD92723D /* Copy Pods Resources */,
+				2E9F07A682125D87CEF6AE93 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -357,7 +314,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08EB04A7501FF3A765EBBA1B /* Check Pods Manifest.lock */ = {
+		192A1D8B602BC6E35B49479E /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -372,7 +329,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5FBE88AA20AB3CCBFD92723D /* Copy Pods Resources */ = {
+		2E9F07A682125D87CEF6AE93 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -384,7 +341,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HairYourWay/Pods-HairYourWay-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -394,20 +351,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36EE16FD1BAF162F00D2F489 /* NSDate+convenience.m in Sources */,
-				36EE16FF1BAF162F00D2F489 /* NSMutableArray+convenience.m in Sources */,
-				36EE17011BAF162F00D2F489 /* UIColor+expanded.m in Sources */,
-				36EE17031BAF162F00D2F489 /* UIView+convenience.m in Sources */,
-				36EE17051BAF162F00D2F489 /* VRGAppDelegate.m in Sources */,
-				36EE17081BAF162F00D2F489 /* VRGViewController.m in Sources */,
-				3693D2911BAD01E500E84EBF /* ServicesViewController.m in Sources */,
 				364D016B1BA73DA400674603 /* AppDelegate.m in Sources */,
 				365CE8D31BAA793800AF02FF /* HYUser.m in Sources */,
-				36EE16F01BAF118F00D2F489 /* VRGCalendarView.m in Sources */,
 				365CE8CF1BAA778800AF02FF /* SignUpViewController.m in Sources */,
 				364D01681BA73DA400674603 /* main.m in Sources */,
-				364D01711BA73DA400674603 /* WelcomeViewController.m in Sources */,
+				462856E31BB265870040A711 /* ServicesViewController.m in Sources */,
+				462856E71BB265910040A711 /* WelcomeViewController.m in Sources */,
 				364D016E1BA73DA400674603 /* HairYourWay.xcdatamodeld in Sources */,
+				462856EA1BB266570040A711 /* HYCalendarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,50 +400,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		364D01861BA73DA400674603 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		364D01871BA73DA400674603 /* Release */ = {
+		462856A41BB25D180040A711 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -529,24 +437,9 @@
 			};
 			name = Release;
 		};
-		364D01891BA73DA400674603 /* Debug */ = {
+		462856A51BB25D180040A711 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7BCFC8D13BE4C20D1968C04 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = HairYourWay/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		364D018A1BA73DA400674603 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70885C7976DBE22F591F5B72 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 75581793B5000B39D2069CAB /* Pods-HairYourWay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -559,26 +452,7 @@
 			};
 			name = Release;
 		};
-		364D018C1BA73DA400674603 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = HairYourWayTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HairYourWay.app/HairYourWay";
-			};
-			name = Debug;
-		};
-		364D018D1BA73DA400674603 /* Release */ = {
+		462856A61BB25D180040A711 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -592,6 +466,74 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HairYourWay.app/HairYourWay";
 			};
 			name = Release;
+		};
+		462856DC1BB25D520040A711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		462856DD1BB25D520040A711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 647E5E98253058622F45879A /* Pods-HairYourWay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = HairYourWay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		462856DE1BB25D520040A711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HairYourWayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HairYourWay.app/HairYourWay";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -599,8 +541,8 @@
 		364D015D1BA73DA400674603 /* Build configuration list for PBXProject "HairYourWay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				364D01861BA73DA400674603 /* Debug */,
-				364D01871BA73DA400674603 /* Release */,
+				462856A41BB25D180040A711 /* Release */,
+				462856DC1BB25D520040A711 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -608,8 +550,8 @@
 		364D01881BA73DA400674603 /* Build configuration list for PBXNativeTarget "HairYourWay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				364D01891BA73DA400674603 /* Debug */,
-				364D018A1BA73DA400674603 /* Release */,
+				462856A51BB25D180040A711 /* Release */,
+				462856DD1BB25D520040A711 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -617,8 +559,8 @@
 		364D018B1BA73DA400674603 /* Build configuration list for PBXNativeTarget "HairYourWayTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				364D018C1BA73DA400674603 /* Debug */,
-				364D018D1BA73DA400674603 /* Release */,
+				462856A61BB25D180040A711 /* Release */,
+				462856DE1BB25D520040A711 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
