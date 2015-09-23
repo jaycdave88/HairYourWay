@@ -39,11 +39,10 @@
 
 -(void)calendarView:(VRGCalendarView *)calendarView dateSelected:(NSDate *)date {
     NSLog(@"Selected date = %@",date);
-
-    if (date == date) {
-        NSLog(@"date is the same");
-    }
-
+    //fetch time object from parse db for each date that is not already booked
+    
+    [self calendarTableViewData];
+    [self.tableView reloadData];
 
 }
 
